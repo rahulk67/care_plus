@@ -62,7 +62,7 @@ const AdminPanel = () => {
               </div>
               <div>
                 <span className="font-bold text-white text-base tracking-tight flex items-center gap-1">
-                  Med<span className="text-emerald-400">Sync</span>
+                  Care<span className="text-emerald-400">Plus</span>
                 </span>
                 <span className="text-[10px] text-emerald-400 font-semibold tracking-wider uppercase block -mt-0.5">
                   Admin Console

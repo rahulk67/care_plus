@@ -47,7 +47,7 @@ export default function HomePage() {
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-1">
-                  Med<span className="text-emerald-600">Sync</span>
+                  Care<span className="text-emerald-600">Plus</span>
                 </span>
                 <span className="text-[11px] block -mt-1 font-semibold text-slate-500 uppercase tracking-widest">
                   Patient Portal
@@ -58,7 +58,7 @@ export default function HomePage() {
             {/* Middle: Clean Navigation Links */}
             <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
               <a href="#how-it-works" className="hover:text-emerald-600 transition-colors">How It Works</a>
-              <a href="#why-us" className="hover:text-emerald-600 transition-colors">Why MedSync</a>
+              <a href="#why-us" className="hover:text-emerald-600 transition-colors">Why CarePlus</a>
               <a href="#specialties" className="hover:text-emerald-600 transition-colors">Specialties</a>
               <a href="#support" className="hover:text-emerald-600 transition-colors">Support</a>
             </nav>
@@ -114,7 +114,7 @@ export default function HomePage() {
           <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 space-y-4">
             <nav className="flex flex-col space-y-3 text-sm font-medium text-slate-700">
               <a href="#how-it-works" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-600 py-1">How It Works</a>
-              <a href="#why-us" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-600 py-1">Why MedSync</a>
+              <a href="#why-us" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-600 py-1">Why CarePlus</a>
               <a href="#specialties" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-600 py-1">Specialties</a>
             </nav>
             <div className="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
@@ -154,7 +154,7 @@ export default function HomePage() {
                 onSubmit={(e) => {
                   e.preventDefault();
                   toast.success(`Slots available for ${selectedSpecialty || 'General Physician'} on ${selectedDate || 'today'}`);
-                  setInterval(() => { navigate('/book-appointment') }, 4000);
+                  // setInterval(() => { navigate('/book-appointment') }, 4000);
                 }}
                 className="grid grid-cols-1 sm:grid-cols-3 gap-3"
               >
@@ -374,7 +374,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 text-white font-bold text-xl mb-3">
                 <HeartPulse className="h-5 w-5 text-emerald-500" />
-                <span>Med<span className="text-emerald-500">Sync</span></span>
+                <span>Care<span className="text-emerald-500">Plus</span></span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed">
                 Streamlining healthcare access with modern appointment scheduling and real-time patient queue management.
@@ -420,7 +420,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
-            <p>© {new Date().getFullYear()} MedSync Patient Management System. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} CarePlus Patient Management System. All rights reserved.</p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-slate-400">Privacy Policy</a>
               <a href="#" className="hover:text-slate-400">Terms of Service</a>

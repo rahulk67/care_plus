@@ -147,7 +147,7 @@ const AuthPage = () => {
                         <HeartPulse className="h-6 w-6" />
                     </div>
                     <span className="text-2xl font-extrabold tracking-tight text-slate-900">
-                        Med<span className="text-emerald-600">Sync</span>
+                        Care<span className="text-emerald-600">Plus</span>
                     </span>
                 </div>
 

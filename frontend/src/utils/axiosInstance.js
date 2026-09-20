@@ -1,5 +1,5 @@
 import axios from "axios";
-const backUrl = process.env.BACKEND_URL || "https://care-plus-backend-alpha.vercel.app";
+const backUrl = process.env.REACT_APP_BACKEND_URL || "https://care-plus-backend-alpha.vercel.app";
 const axiosInstance = axios.create({
     baseURL: backUrl,
     headers: { "Content-Type": "application/json" }

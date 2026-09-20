@@ -244,7 +244,7 @@ const Appointments = () => {
                                 : "Aapne abhi tak koi appointment book nahi kiya hai. Aaj hi apna slot book karein!"}
                         </p>
                         <button
-                            onClick={() => navigate('/add-appointment')}
+                            onClick={() => navigate('/book-appointment')}
                             className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl shadow-sm transition-all"
                         >
                             <PlusCircle className="w-4 h-4" />

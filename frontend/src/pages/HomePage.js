@@ -384,8 +384,8 @@ export default function HomePage() {
             <div>
               <h5 className="text-white text-xs font-semibold uppercase tracking-wider mb-3">For Patients</h5>
               <ul className="space-y-2 text-xs">
-                <li><a href="#" className="hover:text-white transition-colors">Book Doctor</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">My Appointments</a></li>
+                <li><a href="/book-appointment" className="hover:text-white transition-colors">Book Doctor</a></li>
+                <li><a href="/my-appointments" className="hover:text-white transition-colors">My Appointments</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Prescriptions & Records</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Patient FAQs</a></li>
               </ul>

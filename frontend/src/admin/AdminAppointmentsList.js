@@ -30,7 +30,7 @@ const AdminAppointmentsList = () => {
     try {
       setLoading(true);
       setError("");
-      const res = await axiosInstance.get("/api/user/appointment/list");
+      const res = await axiosInstance.get("/api/user/appointment/list/admin");
       
       const list = Array.isArray(res.data) 
         ? res.data 

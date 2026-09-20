@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 const appointmentSchema = new mongoose.Schema({
+    loggedUserPhone:{type:String},
     patientName: {type : String},
     age:{type:Number},
     gender:{type:String},

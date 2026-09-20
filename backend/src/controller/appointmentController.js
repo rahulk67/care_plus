@@ -4,10 +4,12 @@ const addAppointment = async (req,res) => {
     try {
         const { patientName, age, gender, patientPhone, patientAddress, doctor, appointmentDate, appointmentTime, symptoms } = req.body;
         console.log("Req body: ", req.body)
+   const loggedUserPhone  = req.user.phone
+
         if(!patientName || !age || !gender || !patientPhone || !patientAddress || !doctor || !appointmentDate || !appointmentTime || !symptoms){
             return res.status(400).json({message:"All fields are required"})
         }
-        const newAppointment = await Appointment.create({patientName, age, gender, patientPhone, patientAddress, doctor, appointmentDate, appointmentTime, symptoms})
+        const newAppointment = await Appointment.create({loggedUserPhone, patientName, age, gender, patientPhone, patientAddress, doctor, appointmentDate, appointmentTime, symptoms})
         return res.status(201).json({message:"Appointment created successfully", appointment:newAppointment})
     } catch (error) {
         console.log(error);
@@ -16,8 +18,18 @@ const addAppointment = async (req,res) => {
 
 const appointmentsList = async (req, res) => {
     console.log(req.user,"cchhekc jswn")
+    const loggedUserPhone = req.user.phone
     try {
-        const appointments = await Appointment.find({})
+        const appointments = await Appointment.find({loggedUserPhone})
+        return res.status(200).json({appointments})
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const adminAppointmentsList = async (req,res)=>{
+    try {
+        const appointments = await Appointment.find()
         return res.status(200).json({appointments})
     } catch (error) {
         console.log(error);
@@ -38,4 +50,4 @@ const updateAppointment = async (req,res)=>{
     }
 }
 
-export {addAppointment, appointmentsList,updateAppointment}
+export {addAppointment, appointmentsList,updateAppointment,adminAppointmentsList}

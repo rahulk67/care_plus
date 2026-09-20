@@ -1,0 +1,73 @@
+ [
+    {
+        "name": "Dr. Smith",
+        "specialization": "Cardiologist",
+        "experience": "10 years",
+        "rating": 4.5,
+        "imageUrl": "https://example.com/dr-smith.jpg"
+    },
+    {
+        "name": "Dr. Jones",
+        "specialization": "Dermatologist",
+        "experience": "5 years",
+        "rating": 4.2,
+        "imageUrl": "https://example.com/dr-jones.jpg"
+    },
+    {
+        "name": "Dr. Williams",
+        "specialization": "Orthopedic Surgeon",
+        "experience": "12 years",
+        "rating": 4.8,
+        "imageUrl": "https://example.com/dr-williams.jpg"
+    },
+    {
+        "name": "Dr. Brown",
+        "specialization": "Neurologist",
+        "experience": "8 years",
+        "rating": 4.3,
+        "imageUrl": "https://example.com/dr-brown.jpg"
+    },
+    {
+        "name": "Dr. Davis",
+        "specialization": "Pediatrician",
+        "experience": "6 years",
+        "rating": 4.6,
+        "imageUrl": "https://example.com/dr-davis.jpg"
+    },
+    {
+        "name": "Dr. Miller",
+        "specialization": "Ophthalmologist",
+        "experience": "9 years",
+        "rating": 4.4,
+        "imageUrl": "https://example.com/dr-miller.jpg"
+    },
+    {
+        "name": "Dr. Wilson",
+        "specialization": "ENT Specialist",
+        "experience": "7 years",
+        "rating": 4.1,
+        "imageUrl": "https://example.com/dr-wilson.jpg"
+    },
+    {
+        "name": "Dr. Moore",
+        "specialization": "Gynecologist",
+        "experience": "11 years",
+        "rating": 4.7,
+        "imageUrl": "https://example.com/dr-moore.jpg"
+    },
+    {
+        "name": "Dr. Taylor",
+        "specialization": "Gastroenterologist",
+        "experience": "13 years",
+        "rating": 4.9,
+        "imageUrl": "https://example.com/dr-taylor.jpg"
+    },
+    {
+        "name": "Dr. Anderson",
+        "specialization": "Dentist",
+        "experience": "4 years",
+        "rating": 4.0,
+        "imageUrl": "https://example.com/dr-anderson.jpg"
+    }
+]
+
